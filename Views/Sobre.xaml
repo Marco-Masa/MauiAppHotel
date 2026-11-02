@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre o Aplicativo"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Gray100}">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="10"
+                             Spacing="10">
+
+            <!-- Cabeçalho -->
+            <VerticalStackLayout HorizontalOptions="Center"
+                                 Spacing="1"
+                                 Margin="0">
+                
+                <Image Source="masa.png" 
+                       HeightRequest="130" 
+                       WidthRequest="200"
+                       HorizontalOptions="Center"/>
+
+                <Label Text="Masa Gestão" 
+                       FontSize="28" 
+                       FontAttributes="Bold" 
+                       FontFamily="Kalam"
+                       HorizontalOptions="Center"
+                       TextColor="{StaticResource Primary}"/>
+
+                <Label Text="Versão 1.0.0" 
+                       FontSize="14" 
+                       TextColor="{StaticResource Gray500}" 
+                       HorizontalOptions="Center"/>
+                
+            </VerticalStackLayout>
+
+            <!-- Instituição & Curso -->
+            <Border StrokeShape="RoundRectangle 12"
+                    StrokeThickness="0"
+                    BackgroundColor="#1E1E1E"
+                    Padding="16">
+                
+                <Border.Shadow>
+                    
+                    <Shadow Brush="Black"
+                            Offset="0,2"
+                            Radius="4"
+                            Opacity="0.1"/>
+                    
+                </Border.Shadow>
+
+                <VerticalStackLayout Spacing="12">
+                    
+                    <Label Text="Instituição &amp; Curso"
+                           HorizontalOptions="Center"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           FontFamily="Kalam"
+                           TextColor="{StaticResource Primary}"/>
+                    
+                    <BoxView HeightRequest="1"
+                             Color="#E5E7EB"/>
+
+                    <Grid ColumnDefinitions="Auto, *"
+                          ColumnSpacing="12"
+                          VerticalOptions="Center">
+                        
+                        <Image Grid.Column="0"
+                               Source="icon_school.png"
+                               WidthRequest="24"
+                               HeightRequest="24" />
+                        
+                        <VerticalStackLayout Grid.Column="1"
+                                             Spacing="2">
+                            
+                            <Label Text="Instituição"
+                                   FontSize="11"
+                                   TextColor="Gray"/>
+                            
+                            <Label Text="Centro Estadual de Educação Tecnológica Paula Souza - ETEC"
+                                   FontSize="15"
+                                   FontAttributes="Bold"
+                                   TextColor="White"/>
+                            
+                        </VerticalStackLayout>                        
+                    </Grid>
+
+                    <Grid ColumnDefinitions="Auto, *" ColumnSpacing="12" VerticalOptions="Center">
+                        <Image Grid.Column="0" Source="icon_course.png" WidthRequest="24" HeightRequest="24" />
+                        <VerticalStackLayout Grid.Column="1" Spacing="2">
+                            <Label Text="Curso" FontSize="11" TextColor="Gray"/>
+                                    <Label Text="Técnico Desenvolvimento de Sistemas" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                        </VerticalStackLayout>
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Desenvolvimento -->
+            <Border StrokeShape="RoundRectangle 12"
+                    StrokeThickness="0"
+                    BackgroundColor="#1E1E1E"
+                    Padding="16">
+                
+                <Border.Shadow>
+                    
+                    <Shadow Brush="Black"
+                            Offset="0,2"
+                            Radius="4"
+                            Opacity="0.1"/>
+                    
+                </Border.Shadow>
+
+                <VerticalStackLayout Spacing="12">
+
+                    <Label Text="Desenvolvimento"
+                           HorizontalOptions="Center"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           FontFamily="Kalam"
+                           TextColor="#512BD4"/>
+                    
+                    <BoxView HeightRequest="1"
+                             Color="#E5E7EB"/>
+
+                    <Grid ColumnDefinitions="Auto, *"
+                          ColumnSpacing="12"
+                          VerticalOptions="Center">
+                        
+                        <Image Grid.Column="0"
+                               Source="icon_developer.png"
+                               WidthRequest="24"
+                               HeightRequest="24" />
+                        
+                        <VerticalStackLayout Grid.Column="1"
+                                             Spacing="2">
+                            
+                            <Label Text="Desenvolvedor"
+                                   FontSize="11"
+                                   TextColor="Gray"/>
+                            
+                            <Label Text="Marco Aurélio Souza Amorim"
+                                   FontSize="15"
+                                   FontAttributes="Bold"
+                                   TextColor="White"/>
+                            
+                        </VerticalStackLayout>
+                    </Grid>
+
+                    <Grid ColumnDefinitions="Auto, *"
+                          ColumnSpacing="12"
+                          VerticalOptions="Center">
+                        
+                        <Image Grid.Column="0"
+                               Source="icon_calendar.png"
+                               WidthRequest="24"
+                               HeightRequest="24" />
+                        
+                        <Grid Grid.Column="1"
+                              ColumnDefinitions="*, *">
+                            
+                            <VerticalStackLayout Grid.Column="0"
+                                                 Spacing="2">
+                                
+                                <Label Text="Ano"
+                                       FontSize="11"
+                                       TextColor="Gray"/>
+                                
+                                <Label Text="2026"
+                                       FontSize="15"
+                                       TextColor="White"/>
+                                
+                            </VerticalStackLayout>
+                            
+                            <VerticalStackLayout Grid.Column="1"
+                                                 Spacing="2">
+                                
+                                <Label Text="Semestre"
+                                       FontSize="11"
+                                       TextColor="Gray"/>
+                                
+                                <Label Text="2º Semestre"
+                                       FontSize="15"
+                                       TextColor="White"/>
+                                
+                            </VerticalStackLayout>
+                            
+                        </Grid>
+                        
+                    </Grid>
+                    
+                </VerticalStackLayout>
+                
+            </Border>
+
+            <!-- Sobre o Projeto -->
+            <Border StrokeShape="RoundRectangle 12"
+                    StrokeThickness="0"
+                    BackgroundColor="#1E1E1E"
+                    Padding="16">
+                
+                <Border.Shadow>
+                    
+                    <Shadow Brush="Black"
+                            Offset="0,2"
+                            Radius="4"
+                            Opacity="0.1"/>
+                    
+                </Border.Shadow>
+
+                <VerticalStackLayout Spacing="12">
+                    
+                    <Label Text="Sobre o Projeto"
+                           HorizontalOptions="Center"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           FontFamily="Kalam"
+                           TextColor="#512BD4"/>
+                    
+                    <BoxView HeightRequest="1"
+                             Color="#E5E7EB"/>
+
+                    <Label Text="Este aplicativo acadêmico foi desenvolvido com a finalidade da prática de calcular diárias de hospedagem em hotéis."
+                           FontSize="14"
+                           LineHeight="1.4"
+                           TextColor="white"/>
+
+                    <Label Text="Seu principal objetivo é explorar recursos avançados de interface gráfica, aprofundando os conhecimentos na linguagem C# e na marcação XAML."
+                           FontSize="14"
+                           LineHeight="1.4"
+                           TextColor="white"/>
+
+                    <Label Text="O projeto destaca a integração entre o front-end e as regras de negócio no back-end, utilizando um dos conceitos mais importantes e poderosos do .NET MAUI: o Binding Context."
+                           FontSize="14"
+                           LineHeight="1.4"
+                           TextColor="white"/>
+
+                    <Label Text="Através dele, é demonstrado como realizar uma comunicação eficiente e reativa entre os elementos visuais e a lógica do aplicativo."
+                           FontSize="14"
+                           LineHeight="1.4"
+                           TextColor="white"/>
+                    
+                </VerticalStackLayout>
+                
+            </Border>
+
+            <!-- Botões GitHub e Contato-->
+            <HorizontalStackLayout HorizontalOptions="Center"
+                                   Spacing="20"
+                                   Margin="0,10,0,0">
+                
+                <Border StrokeShape="RoundRectangle 20"
+                        BackgroundColor="#512BD4"
+                        WidthRequest="130"
+                        HeightRequest="40"
+                        Padding="15,0">
+                    
+                    <Border.GestureRecognizers>
+                        
+                        <TapGestureRecognizer Tapped="OnGitHubClicked" />
+                        
+                    </Border.GestureRecognizers>
+                    
+                    <HorizontalStackLayout HorizontalOptions="Center"
+                                           VerticalOptions="Center"
+                                           Spacing="10">
+                        
+                        <Image Source="github_icon.png" 
+                               WidthRequest="24" 
+                               HeightRequest="24" 
+                               VerticalOptions="Center"/>
+                        
+                        <Label Text="GitHub" 
+                               TextColor="White" 
+                               FontSize="16"
+                               VerticalOptions="Center"/>
+                        
+                    </HorizontalStackLayout>
+                    
+                </Border>
+
+                <Border StrokeShape="RoundRectangle 20"
+                        BackgroundColor="#512BD4"
+                        WidthRequest="130"
+                        HeightRequest="40"
+                        Padding="15,0">
+                    
+                    <Border.GestureRecognizers>
+
+                        <TapGestureRecognizer Tapped="OnContatoClicked" />
+                    
+                    </Border.GestureRecognizers>
+
+                    <HorizontalStackLayout HorizontalOptions="Center"
+                                           VerticalOptions="Center"
+                                           Spacing="10">
+                        
+                        <Image Source="email_icon.png" 
+                               WidthRequest="24" 
+                               HeightRequest="24" 
+                               VerticalOptions="Center"/>
+
+                        <Label Text="Contato" 
+                               TextColor="White" 
+                               FontSize="16"
+                               VerticalOptions="Center"/>
+
+                    </HorizontalStackLayout>
+
+                </Border>
+                
+            </HorizontalStackLayout>
+
+            <!-- Botão Voltar -->
+            
+            <Border StrokeShape="RoundRectangle 20"
+                    BackgroundColor="#512BD4"
+                    WidthRequest="280"
+                    HeightRequest="40"
+                    Padding="15,0">
+
+                <Border.GestureRecognizers>
+
+                    <TapGestureRecognizer Tapped="OnVoltarClicked" />
+
+                </Border.GestureRecognizers>
+
+                <HorizontalStackLayout HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           Spacing="10">
+                    
+                    <Image Source="voltar_icon.png" 
+                           WidthRequest="24" 
+                           HeightRequest="24" 
+                           VerticalOptions="Center"/>
+                    
+                    <Label Text="Voltar para o Inicio" 
+                           TextColor="White" 
+                           FontSize="16"
+                           VerticalOptions="Center"/>
+                
+                </HorizontalStackLayout>
+
+            </Border>
+
+        </VerticalStackLayout>
+        
+    </ScrollView>
+    
+</ContentPage>

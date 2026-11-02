@@ -1,10 +1,14 @@
-﻿namespace MauiAppHotel
+﻿using MauiAppHotel.Views;
+
+namespace MauiAppHotel;
+
+public partial class AppShell : Shell
 {
-    public partial class AppShell : Shell
+    public AppShell()
     {
-        public AppShell()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+
+        // Registro da Tela Sobre o Aplicativo
+        Routing.RegisterRoute("Sobre", typeof(Sobre));
     }
 }
