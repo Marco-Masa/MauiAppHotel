@@ -52,7 +52,16 @@
                     <Picker x:Name="pck_quarto"
                             Title="Selecione sua Acomodação"
                             ItemDisplayBinding="{Binding Descricao}"/>
-                    
+
+                    <!-- Link Detalhes das Suítes -->
+                    <Button Text="Ver Detalhes das Suítes"
+                            BackgroundColor="Transparent"
+                            TextColor="{StaticResource Primary}"
+                            TextTransform="None"
+                            FontSize="14"
+                            Clicked="OnVerDetalhesSuitesClicked"
+                            Margin="0,2,0,1" />
+
                     <Frame Padding="10"
                            Margin="10">
                         <VerticalStackLayout>
@@ -75,7 +84,18 @@
                     <Button Text="Avançar" Clicked="Button_Clicked"/>
                 </VerticalStackLayout>
             </Frame>
-            
+
+            <!-- Botão Perfil do Hóspede -->
+            <Button Text="Meu Perfil Hóspede"
+                    ImageSource="hospede_icon.png"
+                    BackgroundColor="{StaticResource Primary}"
+                    Margin="10,20,10,0"
+                    WidthRequest="200"
+                    TextColor="White"
+                    CornerRadius="8"
+                    HeightRequest="50"
+                    Clicked="OnPerfilClicked" />
+
             <!-- Botão Sobre o Aplicativo -->
             <Button Text="Sobre o Aplicativo"
                     ImageSource="icon_info.png"
@@ -86,6 +106,7 @@
                     CornerRadius="8"
                     HeightRequest="50"
                     Clicked="OnSobreClicked" />
+            
         </VerticalStackLayout>
     </ScrollView>
     
